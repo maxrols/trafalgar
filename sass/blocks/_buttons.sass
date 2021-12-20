@@ -1,9 +1,28 @@
-.consult-btn
+.btn
     font-size: 18px
     line-height: 60px
     font-weight: 700
-    color: #fff
-    padding: 0 40px
-    border: none
-    background-color: $main-color
+    background: transparent
     border-radius: 55px
+    &_consultation
+        color: #fff
+        padding: 0 40px
+        border: none
+        background-color: $main-color
+    &_learnmore
+        color: $main-color
+        padding: 0 51px
+        border: 1.4px solid #458FF6
+    &_download
+        padding: 0 68px 0 43px
+        color: $main-color
+        border: 1.4px solid #458FF6
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            top: 22px
+            right: 44px
+            width: 10px
+            height: 15px
+            background: url('../icons/download.png') center center/cover no-repeat
