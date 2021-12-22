@@ -1,5 +1,9 @@
 $(document).ready(function(){
     $('.slider__carousel').slick({
-        dots: true
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 1000,
+        
     });
 });

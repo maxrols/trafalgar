@@ -5,18 +5,31 @@
     background: transparent
     border-radius: 55px
     border: 1.4px solid $main-color
+    transition: all .5s
+    &:hover
+        border-color: transparent
     &_consultation
         color: #fff
         padding: 0 40px
-        border: none
         background-color: $main-color
+        &:hover
+            background: transparent
+            border-color: $main-color
+            color: $main-color
     &_learnmore
         color: $main-color
         padding: 0 51px
+        &:hover
+            background: $main-color
+            color: #fff
     &_download
         padding: 0 68px 0 43px
         color: $main-color
         position: relative
+        
+        &:hover
+            background: $main-color
+            color: #fff
         &::after
             content: ''
             position: absolute
@@ -24,7 +37,14 @@
             right: 44px
             width: 10px
             height: 15px
-            background: url('../icons/download.png') center center/cover no-repeat
+            background: url('../icons/download.svg') center center/cover no-repeat
+            transition: all .5s
+        &:hover::after
+            background: url('../icons/download_white.svg') center center/cover no-repeat
+            top: 24px
     &_view-all
         padding: 0 66px
         color: $main-color
+        &:hover
+            background: $main-color
+            color: #fff
