@@ -6,4 +6,7 @@ $(document).ready(function(){
         speed: 1000,
         
     });
+
+
+    new WOW().init();
 });
