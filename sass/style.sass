@@ -9,8 +9,13 @@
 @import 'blocks/check'
 @import 'blocks/footer'
 
+
+
 @import 'blocks/buttons.sass'
 @import 'blocks/templates.sass'
+
+@import 'responsive/header'
+@import 'responsive/first'
 
 
 
@@ -27,9 +32,13 @@ body
     height: fit-content
     overflow-x: hidden
 
+.wrapper
+    min-height: 100vh
+    overflow: hidden
 
 .container-top 
-    max-width: 1247px
+    max-width: 1307px
+    padding: 0 30px
     margin: 0 auto
 
 .container-main 
@@ -44,4 +53,18 @@ body
 .container-footer
     max-width: 1170px
     margin: 0 auto
+
+.burger
+    width: 30px
+    height: 15px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    display: none
+    span
+        display: block
+        background-color: $main-color
+        height: 2px
+        width: 100%
+
 
